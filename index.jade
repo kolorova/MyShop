@@ -1,10 +1,10 @@
 doctype html
-html(lang = 'en')
+	html(lang = 'en')
 head
-    include jade/head.jade
+	meta(charset="utf-8")
+	link(href="../assets/css/style.css")
 body
-.wrapper
-    include jade/header.jade
-    include jade/section_left.jade
-    include jade/section_right.jade
-    include jade/foot.jade
+    include source/jade/header.jade
+    include source/jade/section_left.jade
+    include source/jade/section_right.jade
+    include source/jade/foot.jade
