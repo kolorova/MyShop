@@ -1,0 +1,43 @@
+footer
+	nav.footer_nav
+		h3 Компания
+		ul.company
+			li
+				a(href="#about") About
+			li
+				a(href="#Contacts") Contacts
+			li
+				a(href="#Delivery") Delivery
+			li
+				a(href="#Coworking") Coworking
+			li
+				a(href="#Guarantees") Guarantees
+	section.proposition
+		h3 Выгодные предложения
+		- var list = ["Sales", "Week proposition", "Best price", "Day sale","Guarantees"]
+		ul
+			each item in list
+				li: item
+	section.subscribe
+		ul
+			li
+				h2 Узнавайте первыми о распродажах
+			li
+				form(method='post' action='/register')
+					input(placeholder='name@email.com' name='email')
+					button Submit
+			li 
+				h2 Подписывайтесь на нас
+			li 
+				ul.social_network
+					li
+						img(src="fb.png" alt ='fb') 
+					li
+						img(src="vk.png" alt ='vk')
+					li
+						img(src="google.png" alt ='google')
+					li
+						img(src="tw.png" alt ='tw')
+	footer.footer_bottom
+		h6 Copyright (c) 2014—2017 GK «MyShop» 
+					

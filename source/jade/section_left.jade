@@ -1,0 +1,26 @@
+.section_left
+	.section1
+		mixin header_block(title, link)  
+			p main-title #{title}
+			ul
+				li
+					a(href='#{link}', target="_blank")
+		+header_block('PC', 'features.html')
+		+header_block('Tablets', 'features.html')
+		+header_block('Smartphones', 'features.html')
+		+header_block('Printer', 'features.html')
+		+header_block('Cameras', 'features.html')
+		+header_block('Notebook', 'features.html')
+	section.top-sale
+		h3 Лидеры продаж
+		ul.topsale
+			li
+				form
+					label(for 'top-sale1') Model 15564
+					img#top-sale1(src ='/icons/top_sale.jpg' alt = 'Top sale model')
+					button Купить
+			li
+				form
+					label(for 'top-sale2') Model 187486
+					img#top-sale2(src ='/icons/top_sale2.jpg' alt = 'Top sale model')
+					button Купить

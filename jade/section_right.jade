@@ -1,0 +1,125 @@
+.section_right
+	nav
+		- var back = 'Назад', main = 'Главная', catalog = 'Каталог товаров', category = 'Компьютерна техника'
+		p #{back} | #{main} > #{catalog} > #{category}
+	.article_section
+		figure.slider
+			img(src ='slider.jpg' alt = 'slider')
+		.brand_choose
+			h1 Выбор по бренду
+			a(href='brands.html', target='_blank') Все бренды
+			.container
+				mixin brand(imageName, caption)
+					div.brand
+						img(src="/icons/#{imageName}.jpg", alt = imageName)
+						h4.image-caption= caption
+				+brand("LG", 'blkdkk')
+				+brand("Samsung", 'lorem')
+				+brand("Acer", 'lorem')
+		.Special_offers
+			h1 Акционные предложения
+			ul.title
+				li
+					a(href='Sales.html', target='_blank') Все акции
+				ul.item
+					li.image
+						a(href = 'item.jpg' alt = 'item')
+					li.model  
+						a(href = 'url') LG model 54 5451
+					li.rating
+						img(src ='url')
+					li.price
+						ul
+							li.previous 
+								p 
+									s 555
+							li.actual 
+								p 287
+					li
+						button Купить
+						li
+					a(href='Sales.html', target='_blank') Все акции
+				ul.item
+					li.image
+						a(href = 'item.jpg' alt = 'item')
+					li.model  
+						a(href = 'url') LG model 54 5451
+					li.rating
+						img(src ='url')
+					li.price
+						ul
+							li.previous 
+								p 
+									s 555
+							li.actual 
+								p 287
+					li
+						button Купить
+						li
+					a(href='Sales.html', target='_blank') Все акции
+				ul.item
+					li.image
+						a(href = 'item.jpg' alt = 'item')
+					li.model  
+						a(href = 'url') LG model 54 5451
+					li.rating
+						img(src ='url')
+					li.price
+						ul
+							li.previous 
+								p 
+									s 555
+							li.actual 
+								p 287
+					li
+						button Купить
+						li
+					a(href='Sales.html', target='_blank') Все акции
+				ul.item
+					li.image
+						a(href = 'item.jpg' alt = 'item')
+					li.model  
+						a(href = 'url') LG model 54 5451
+					li.rating
+						img(src ='url')
+					li.price
+						ul
+							li.previous 
+								p 
+									s 555
+							li.actual 
+								p 287
+					li
+						button Купить
+						li
+					a(href='Sales.html', target='_blank') Все акции
+				ul.item
+					li.image
+						a(href = 'item.jpg' alt = 'item')
+					li.model  
+						a(href = 'url') LG model 54 5451
+					li.rating
+						img(src ='url')
+					li.price
+						ul
+							li.previous 
+								p 
+									s 555
+							li.actual 
+								p 287
+					li
+						button Купить
+		.Overview
+			ul.article
+				li	
+					img(src ='url')			
+					a(href = 'site.html' ) Телевизор Samsung
+					p lorem
+				li	
+					img(src ='url')			
+					a(href = 'site.html' ) Телевизор Samsung
+					p lorem
+				li	
+					img(src ='url')			
+					a(href = 'site.html' ) Телевизор Samsung
+					p lorem

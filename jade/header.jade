@@ -1,0 +1,30 @@
+header.header
+	include header_nav.jade
+	section.middle_header
+		figure.logo
+			img(src ='images.jpg' alt = 'logo')
+			
+		ul(middle_header)
+			li.city 
+				select
+					option(value="Kiev") Kiev
+					option(value="Dnepr" selected) Dnepr
+					option(value="Odessa") Odessa
+			li.contact-info
+				a(href='Order_call.html', target='_blank') Order call
+				h2 0800 500 42 42
+			li.chat
+				a(href='Chat.html', target='_blank') Online chat
+				h2 044 555 45 87
+			li.cart
+				img(src ='cart.png' alt = 'cart')
+				a(href ='cart.html') My cart
+	section.bottom_header
+		form.search(name="search", method="post")
+			fieldset
+				input(type="text", name="search")
+				select
+					option(value="1") 1
+					option(value="All_categories" selected) All categories
+					option(value="3") 3
+				button(type = 'submit') Search
