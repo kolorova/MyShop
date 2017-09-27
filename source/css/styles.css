@@ -1,0 +1,196 @@
+/* basic elements */
+
+html {
+	margin: 0;
+	padding: 0;
+	}
+
+header {
+	width: 100%;
+	background: white;
+	box-shadow: 3px 3px 1px rgba(0,0,0,.05);
+	padding: 15px 0;
+	margin-bottom: 30px;
+	position: relative;
+	border: 2px ;
+	}
+
+nav {
+	width: 100%; 
+	height: 10px;
+	border: 1px solid black;
+	}
+
+body { 
+	font: 75% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753; 
+	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
+	margin: 0; 
+	padding: 0;
+	}
+p 	{ 
+	margin-top: 0; 
+	text-align: justify;
+	}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: purple;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	}
+aside {
+	width: 33%;
+	float: left;
+	}
+nav li{
+	display: inline-block;
+	margin-right: 30px;
+	float: left;
+	}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+	}
+ul {
+	list-style: none;
+	}
+div < span{
+	display: flex;
+	flex-direction: row;
+	}
+
+ul< li < h3 h2 h1{
+	text-align:
+	}	
+
+a {
+	text-decoration: none;
+	outline: none;
+	}
+
+footer { 
+	text-align: center; 
+	}
+
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+	}
+
+/* specific divs */
+.logo{
+	float:left;
+	width:25%;
+	box-shadow: 5px 5px 5px 0px yellow 
+}
+.middle_header < ul {
+	display: inline-block;
+	width: 75%;
+	float:right;
+	}
+
+.middle_header < li:last-of-child {
+	vertical-align: text-top;
+	float: right;
+	}
+
+#cart {
+	display: block;
+	float: right;
+	}
+
+[src $= "cart.png"]{
+	height: 8px
+	width: 8px;
+	}
+
+.container < span{
+	float:left;
+	height: 15px
+	width: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	}
+
+[src="../source/images/samsung-logo.jpeg"]{
+	height: 8px
+	width: 8px;
+	}
+
+
+.personalisation {
+	float: right;
+	}
+
+
+/* логотип */
+.logo {
+display: block; 
+float: left;
+}
+.cart{
+	
+}
+
+.middle_header < ul{
+	display: inline-block;
+	margin-right: 30px;
+	float: left;
+}
+
+.brand_choose{
+
+}
+.brand_choose ~ img{
+	width: 50px;
+	height: 50px;
+}
+
+.section_right{
+	margin-bottom: 30px;
+	width: 64%;
+	float: left;
+}
+.slider::before{
+	height: 200px;
+	width:500px;
+    padding: 10px;
+	}
+.slider::after {
+	content: ../source/images/kk.jpg
+	height: 200px;
+	width:500px;
+    padding: 10px;
+}
+.upper_header_menu {
+	display: inline;
+	width: 200px
+	height: 150px
+	padding: 20px
+	border-width: 10p
+	}
+.section1 {
+	display: block;
+	width: 200px
+	height: 150px
+	padding: 20px
+	border-width: 10p
+	}
+.overview {
+	overflow: auto;
+
+}
+
